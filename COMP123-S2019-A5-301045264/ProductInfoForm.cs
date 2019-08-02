@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_A5_301045264
 {
-    public partial class Form1 : Form
+    public partial class ProductInfoForm : Form
     {
-        public Form1()
+        public ProductInfoForm()
         {
             InitializeComponent();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormNames.ORDER_FORM].Show();
+            this.Hide();
         }
     }
 }
