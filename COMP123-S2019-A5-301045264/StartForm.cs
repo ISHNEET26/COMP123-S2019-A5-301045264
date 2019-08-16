@@ -27,5 +27,12 @@ namespace COMP123_S2019_A5_301045264
         {
             Application.Exit();
         }
+
+        private void SavedOrderButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.Forms[FormNames.PRODUCT_INFO_FORM].Show();
+            ProductInfoForm.OpenFileDialog();
+        }
     }
 }

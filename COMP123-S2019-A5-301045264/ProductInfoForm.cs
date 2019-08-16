@@ -22,5 +22,20 @@ namespace COMP123_S2019_A5_301045264
             Program.Forms[FormNames.ORDER_FORM].Show();
             this.Hide();
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        public static void OpenFileDialog()
+        {
+            //EXTERNAL RESOURCE: https://www.youtube.com/user/ProgrammingKnowledge/videos
+            OpenFileDialog dialogbox1 = new OpenFileDialog();
+            if(dialogbox1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string doc = dialogbox1.FileName;
+                MessageBox.Show(doc);
+            }
+        }
     }
 }

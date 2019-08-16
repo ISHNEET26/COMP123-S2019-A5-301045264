@@ -39,11 +39,11 @@
             // 
             // SelectFormLabel
             // 
-            this.SelectFormLabel.AutoSize = true;
             this.SelectFormLabel.BackColor = System.Drawing.Color.White;
+            this.SelectFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectFormLabel.Location = new System.Drawing.Point(12, 30);
             this.SelectFormLabel.Name = "SelectFormLabel";
-            this.SelectFormLabel.Size = new System.Drawing.Size(234, 20);
+            this.SelectFormLabel.Size = new System.Drawing.Size(365, 35);
             this.SelectFormLabel.TabIndex = 0;
             this.SelectFormLabel.Text = "Dollar Computer Hardware  List ";
             // 
@@ -58,31 +58,35 @@
             // SelectionLabel
             // 
             this.SelectionLabel.AutoSize = true;
-            this.SelectionLabel.Location = new System.Drawing.Point(12, 403);
+            this.SelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionLabel.Location = new System.Drawing.Point(12, 396);
             this.SelectionLabel.Name = "SelectionLabel";
-            this.SelectionLabel.Size = new System.Drawing.Size(113, 20);
+            this.SelectionLabel.Size = new System.Drawing.Size(190, 31);
             this.SelectionLabel.TabIndex = 2;
             this.SelectionLabel.Text = "Your Selection";
             // 
             // SelectionTextBox
             // 
-            this.SelectionTextBox.Location = new System.Drawing.Point(150, 403);
+            this.SelectionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionTextBox.Location = new System.Drawing.Point(208, 403);
             this.SelectionTextBox.Name = "SelectionTextBox";
-            this.SelectionTextBox.Size = new System.Drawing.Size(415, 26);
+            this.SelectionTextBox.Size = new System.Drawing.Size(415, 31);
             this.SelectionTextBox.TabIndex = 3;
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(598, 398);
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(636, 398);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 31);
+            this.CancelButton.Size = new System.Drawing.Size(101, 31);
             this.CancelButton.TabIndex = 4;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(698, 398);
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(768, 399);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 31);
             this.NextButton.TabIndex = 5;
@@ -94,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 461);
+            this.ClientSize = new System.Drawing.Size(884, 461);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
