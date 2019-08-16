@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* STUDENT NAME : ISHNEET KAUR
+ * STUDENT NUMBER : 301045624
+ * DESCRIPTION: THIS IS THE SPLASH FORM
+ */
 namespace COMP123_S2019_A5_301045264
 {
     public partial class SplashForm : Form

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* STUDENT NAME : ISHNEET KAUR
+ * STUDENT NUMBER : 301045624
+ * DESCRIPTION: THIS IS THE PROGRAM CLASS
+ */
 namespace COMP123_S2019_A5_301045264
 {
-    static class Program
+   public static class Program
     {
         public static Dictionary<FormNames, Form> Forms;
         /// <summary>

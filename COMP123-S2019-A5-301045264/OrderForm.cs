@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* STUDENT NAME : ISHNEET KAUR
+ * STUDENT NUMBER : 301045624
+ * DESCRIPTION: THIS IS THE ORDER FORM
+ */
 namespace COMP123_S2019_A5_301045264
 {
     public partial class OrderForm : Form
@@ -24,6 +27,11 @@ namespace COMP123_S2019_A5_301045264
         }
 
         private void FinishButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

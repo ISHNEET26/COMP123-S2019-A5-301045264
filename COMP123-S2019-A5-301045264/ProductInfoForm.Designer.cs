@@ -459,6 +459,7 @@
             this.AnotherProductButton.TabIndex = 10;
             this.AnotherProductButton.Text = "Select Another Product";
             this.AnotherProductButton.UseVisualStyleBackColor = true;
+            this.AnotherProductButton.Click += new System.EventHandler(this.AnotherProductButton_Click);
             // 
             // NextButton
             // 
@@ -506,6 +507,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
@@ -529,40 +531,40 @@
         private System.Windows.Forms.Label ProductIDLabel;
         private System.Windows.Forms.Label ConditionLabel;
         private System.Windows.Forms.Label CostLabel;
-        private System.Windows.Forms.TextBox ProductIDTextBox;
-        private System.Windows.Forms.TextBox ConditionTextBox;
-        private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
-        private System.Windows.Forms.TextBox PlatformTextBox;
         private System.Windows.Forms.Label PlatformLabel;
         private System.Windows.Forms.GroupBox TechSpecsGroupBox;
         private System.Windows.Forms.Label OSLabel;
         private System.Windows.Forms.Label ModelLabel;
         private System.Windows.Forms.Label ManufacturerLabel;
-        private System.Windows.Forms.TextBox ManufacturerTextBox;
-        private System.Windows.Forms.TextBox OSTextBox;
-        private System.Windows.Forms.TextBox ModelTextBox;
-        private System.Windows.Forms.TextBox CPUTypeTextBox;
         private System.Windows.Forms.Label CPUTypeLabel;
-        private System.Windows.Forms.TextBox CPUBrandTextBox;
         private System.Windows.Forms.Label CPUBrandLabel;
-        private System.Windows.Forms.TextBox CPUSpeedTextBox;
         private System.Windows.Forms.Label CPUSpeedLabel;
-        private System.Windows.Forms.TextBox CPUNumberTextBox;
         private System.Windows.Forms.Label CPUNumberLabel;
-        private System.Windows.Forms.TextBox WebCamTextBox;
         private System.Windows.Forms.Label WebCamLabel;
-        private System.Windows.Forms.TextBox GPUTypeTextBox;
         private System.Windows.Forms.Label GPUTypeLabel;
-        private System.Windows.Forms.TextBox HDDTextBox;
         private System.Windows.Forms.Label HDDLabel;
-        private System.Windows.Forms.TextBox LCDSizeTextBox;
         private System.Windows.Forms.Label LCDSizeLabel;
-        private System.Windows.Forms.TextBox MemoryTextBox;
         private System.Windows.Forms.Label MemoryLabel;
         private System.Windows.Forms.Label ConfirmLabel;
         private System.Windows.Forms.Button AnotherProductButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button CancelButton;
+        public System.Windows.Forms.TextBox ProductIDTextBox;
+        public System.Windows.Forms.TextBox ConditionTextBox;
+        public System.Windows.Forms.TextBox CostTextBox;
+        public System.Windows.Forms.TextBox PlatformTextBox;
+        public System.Windows.Forms.TextBox ManufacturerTextBox;
+        public System.Windows.Forms.TextBox OSTextBox;
+        public System.Windows.Forms.TextBox ModelTextBox;
+        public System.Windows.Forms.TextBox CPUTypeTextBox;
+        public System.Windows.Forms.TextBox CPUBrandTextBox;
+        public System.Windows.Forms.TextBox CPUSpeedTextBox;
+        public System.Windows.Forms.TextBox CPUNumberTextBox;
+        public System.Windows.Forms.TextBox WebCamTextBox;
+        public System.Windows.Forms.TextBox GPUTypeTextBox;
+        public System.Windows.Forms.TextBox HDDTextBox;
+        public System.Windows.Forms.TextBox LCDSizeTextBox;
+        public System.Windows.Forms.TextBox MemoryTextBox;
     }
 }
