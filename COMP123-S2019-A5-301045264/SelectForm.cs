@@ -21,10 +21,32 @@ namespace COMP123_S2019_A5_301045264
         {
             InitializeComponent();
         }
+        private void SelectFormDataGridView_Click(object sender, EventArgs e)
+        {
 
+            
+        }
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Program.Forms[FormNames.PRODUCT_INFO_FORM].Show();
+
+            ProductInfoForm poi = new ProductInfoForm();
+            poi.ProductIDTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[0].Value.ToString();
+            poi.ConditionTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[1].Value.ToString();
+            poi.CostTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[2].Value.ToString();
+            poi.PlatformTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[3].Value.ToString();
+            poi.OSTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[4].Value.ToString();
+            poi.ManufacturerTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[5].Value.ToString();
+            poi.ModelTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[6].Value.ToString();
+            poi.MemoryTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[7].Value.ToString();
+            poi.LCDSizeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[8].Value.ToString();
+            poi.HDDTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[9].Value.ToString();
+            poi.CPUBrandTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[10].Value.ToString();
+            poi.CPUNumberTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[11].Value.ToString();
+            poi.GPUTypeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[12].Value.ToString();
+            poi.CPUTypeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[13].Value.ToString();
+            poi.CPUSpeedTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[14].Value.ToString();
+            poi.WebCamTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[15].Value.ToString();
+            poi.Show();
             this.Hide();
         }
 
@@ -54,27 +76,6 @@ namespace COMP123_S2019_A5_301045264
            
         }
 
-        private void SelectFormDataGridView_Click(object sender, EventArgs e)
-        {
-
-            ProductInfoForm poi = new ProductInfoForm();
-            poi.ProductIDTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[0].Value.ToString();
-            poi.ConditionTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[1].Value.ToString();
-            poi.CostTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[2].Value.ToString();
-            poi.PlatformTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[3].Value.ToString();
-            poi.OSTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[4].Value.ToString();
-            poi.ManufacturerTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[5].Value.ToString();
-            poi.ModelTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[6].Value.ToString();
-            poi.MemoryTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[7].Value.ToString();
-            poi.LCDSizeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[8].Value.ToString();
-            poi.HDDTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[9].Value.ToString();
-            poi.CPUBrandTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[10].Value.ToString();
-            poi.CPUNumberTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[11].Value.ToString();
-            poi.GPUTypeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[12].Value.ToString();
-            poi.CPUTypeTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[13].Value.ToString();
-            poi.CPUSpeedTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[14].Value.ToString();
-            poi.WebCamTextBox.Text = SelectFormDataGridView.CurrentRow.Cells[15].Value.ToString();
-            poi.Show();
-        }
+       
     }
 }

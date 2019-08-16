@@ -107,7 +107,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // saveToolStripMenuItem
@@ -122,8 +122,9 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -138,6 +139,7 @@
             this.selectAnotherProductToolStripMenuItem.Name = "selectAnotherProductToolStripMenuItem";
             this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.selectAnotherProductToolStripMenuItem.Text = "Select Another Product";
+            this.selectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.selectAnotherProductToolStripMenuItem_Click);
             // 
             // ProductIDLabel
             // 
@@ -507,7 +509,6 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
-            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);

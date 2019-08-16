@@ -19,7 +19,11 @@ namespace COMP123_S2019_A5_301045264
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// this is sthe event handler for the next button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             Program.Forms[FormNames.ORDER_FORM].Show();
@@ -27,11 +31,20 @@ namespace COMP123_S2019_A5_301045264
 
             
         }
-
+        /// <summary>
+        /// this is sthe event handler for the click event of the cancel button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        /// <summary>
+        /// this is the method that opens the dialog box that enables users to choose files from their system
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public static void OpenFileDialog()
         {
             //EXTERNAL RESOURCE: https://www.youtube.com/user/ProgrammingKnowledge/videos
@@ -44,14 +57,28 @@ namespace COMP123_S2019_A5_301045264
             }
         }
 
-        private void ProductInfoForm_Load(object sender, EventArgs e)
-        {
-
-            
-
-        }
+       
 
         private void AnotherProductButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormNames.SELECT_FORM].Show();
+            this.Hide();
+        }
+        /// <summary>
+        /// this is the event handler for the exit button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        /// <summary>
+        /// This is thwe event handler for the select another product option
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void selectAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.Forms[FormNames.SELECT_FORM].Show();
             this.Hide();
